@@ -1,1 +1,14 @@
-first terrafrom notes
+Variables can be handled in terrafrom:
+    1.Environmental Variables (export AWS_ACCESS_KEY_ID="anaccesskey", % export AWS_SECRET_ACCESS_KEY="asecretkey",% export AWS_REGION="us-west-2")
+        (incase of windows use setx instead of export, ex: TF_VAR_instancetype = t2.large)
+    2.Command Lline Flags (ex: -var="instance_type=t2.small)
+    3.From a file (-var-file="production.tfvars")
+    4.Variables default (ex: variables from variables.tf file)
+
+Data types of Variables:
+    1. String
+    2. List
+    3. Map
+    4. Number
+    
+
